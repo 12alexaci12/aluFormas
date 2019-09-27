@@ -144,6 +144,18 @@ CREATE TABLE productos(
 	FOREIGN KEY(id_vidrieria) REFERENCES vidrieria(id_vidrieria)
 )ENGINE=INNODB;
 
+CREATE TABLE clientes(
+	id_cliente INT NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(25) NOT NULL,
+	direccion VARCHAR(35) NOT NULL,
+	telefono VARCHAR(15) NOT NULL,
+  fec_insercion TIMESTAMP NOT NULL,
+  fec_modificacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  usuario INT NOT NULL,
+  estado  CHAR(1) NOT NULL,
+	PRIMARY KEY(id_cliente)
+)ENGINE=INNODB;
+
 CREATE TABLE cotizaciones(
 	id_cotizacion INT NOT NULL AUTO_INCREMENT,
 	id_vidrieria INT NOT NULL,
@@ -159,18 +171,6 @@ CREATE TABLE cotizaciones(
 	FOREIGN KEY(id_vidrieria) REFERENCES vidrieria(id_vidrieria),
 	FOREIGN KEY(id_empleado) REFERENCES empleados(id_empleado),
   FOREIGN KEY(id_cliente) REFERENCES clientes(id_cliente)
-)ENGINE=INNODB;
-
-CREATE TABLE clientes(
-	id_cliente INT NOT NULL AUTO_INCREMENT,
-	nombre VARCHAR(25) NOT NULL,
-	direccion VARCHAR(35) NOT NULL,
-	telefono VARCHAR(15) NOT NULL,
-  fec_insercion TIMESTAMP NOT NULL,
-  fec_modificacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  usuario INT NOT NULL,
-  estado  CHAR(1) NOT NULL,
-	PRIMARY KEY(id_cliente),
 )ENGINE=INNODB;
 
 CREATE TABLE detalle_cotizaciones(
