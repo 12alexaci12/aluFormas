@@ -1,236 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Menu Formularios</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-  <link rel="stylesheet" type="text/css" href="calendario/tcal.css">
-  <script type="text/javascript" src="js/expreciones_regulares.js"></script>
-  <script type="text/javascript" src="js/validacion7.js"></script>
-  <script type="text/javascript" src="calendario/tcal.js"></script>
-</head>
-<body>
-  <br><br>
-  <header>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Productos</title>
+        <link rel="stylesheet" href="css/style.css">
 
-  </header>
- 	<nav id="principal">Menú principal
-    <div id="menu">
-  	  <ul>
-				<li class="nivel1">
-          <a href="formulario1.html" class="nivel1">Datos empresa</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario2.html" class="nivel1">perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario3.html" class="nivel1">vidrios</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario4.html" class="nivel1">proveedores</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario5.html" class="nivel1">empleados</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario6.html" class="nivel1">propietarios</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario7.html" class="nivel1">cotizaciones</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario8.html" class="nivel1">clientes</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario10.html" class="nivel1">productos</a>
-        </li>
-				<li class="nivel1">
-          <a href="formulario11.html" class="nivel1">Tipos de perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario12.html" class="nivel1">colores</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario13.html" class="nivel1">Lineas de Perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario14.html" class="nivel1">Tipos de Vidrios</a>
-        </li>
-      </div>
-  	</nav>
-    <br><br>
-    <section id="columna">
-    <br><br><br><br><br>
-      <header id="subtitulo2">Cotizaciones</header>
-      <form name="form">
-        <table border="1" width=350>
-          <tr>
-            <td>
-              <table border="0">
-                <tr>
-                  <td>cliente :</td>
-                    <td>
-                      <select name="cliente">
-                        <option value="">...</option>
-                        <option value="adrian">adrian</option>
-                        <option value="erik">erik</option>
-                        <option value="carlos">carlos</option>
-                        <option value="julio">julio</option>
-                        <option value="juan">juan</option>
-                        <option value="gerardo">gerardo</option>
-                        <option value="marco">marco</option>
-                        <option value="javier">javier</option>
-                        <option value="david">david</option>
-                        <option value="alex">alex</option>
-                      </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Fecha :</td>
-                  <td><input type="text" name="date" class="tcal" value=""></input></td>
-                </tr>
-                <tr>
-                  <td>empleado :</td>
-                  <td>
-                      <select name="empleado">
-                        <option value="">...</option>
-                        <option value="alex">alex</option>
-                        <option value="adrian">adrian</option>
-                        <option value="carlos">carlos</option>
-                        <option value="julio">julio</option>
-                        <option value="juan">juan</option>
-                        <option value="gerardo">gerardo</option>
-                        <option value="marco">marco</option>
-                        <option value="javier">javier</option>
-                        <option value="david">david</option>
-                        <option value="erik">erik</option>
-                      </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Precio final :</td>
-                  <td><input type="text" size="20" name="precioFinal" maxlength="15" ></td>
-                </tr>
-              </table>
-              <br>
-              <section id="detalle">
-              <table>
-                <tr>
-                  <th colspan="2">Detalle de Cotizacion</th>
-                </tr>
-                <tr>
-                  <td>Producto :</td>
-                    <td>
-                      <select name="producto">
-                        <option  value="">...</option>
-                        <option  value="ventana L20">ventana L20</option>
-                        <option  value="ventana L25">ventana L25</option>
-                        <option  value="ventana L30">ventana L30</option>
-                        <option  value="puerta aluminio L30">puerta aluminio L30</option>
-                        <option  value="puerta aluminio L35">puerta aluminio L35</option>
-                        <option  value="puerta corrediza de vidrio  templado">puerta corrediza de vidrio  templado</option>
-                        <option  value="puerta batiente de vidrio  templado">puerta batiente de vidrio  templado</option>
-                      </select>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Alto :</td>
-                  <td><input type="text" size="20" name="alto" maxlength="15" ></td>
-                </tr>
-                <tr>
-                  <td>Ancho :</td>
-                  <td><input type="text" size="20" name="ancho" maxlength="15" ></td>
-                </tr>
-                <tr>
-                  <td>Precio :</td>
-                  <td><input type="text" size="20" name="precio" maxlength="15" ></td>
-                </tr>
-              </table>
-              <table>
-                <tr><hr size="15"></tr>
-                <tr>
-                  <th colspan="2">Detalle de Cotizacion</th>
-                </tr>
-                <tr>
-                 <td>Producto :</td>
-                    <td>
-                      <select name="producto1">
-                        <option  value="">...</option>
-                        <option  value="ventana L20">ventana L20</option>
-                        <option  value="ventana L25">ventana L25</option>
-                        <option  value="ventana L30">ventana L30</option>
-                        <option  value="puerta aluminio L30">puerta aluminio L30</option>
-                        <option  value="puerta aluminio L35">puerta aluminio L35</option>
-                        <option  value="puerta corrediza de vidrio  templado">puerta corrediza de vidrio  templado</option>
-                        <option  value="puerta batiente de vidrio  templado">puerta batiente de vidrio  templado</option>
-                      </select>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Alto :</td>
-                  <td><input type="text" size="20" name="alto1" maxlength="15" ></td>
-                </tr>
-                <tr>
-                  <td>Ancho :</td>
-                  <td><input type="text" size="20" name="ancho1" maxlength="15" ></td>
-                </tr>
-                <tr>
-                  <td>Precio :</td>
-                  <td><input type="text" size="20" name="precio1" maxlength="15" ></td>
-                </tr>
-              </table>
-              <table>
-                <tr><hr size="15"></tr>
-                <tr>
-                  <th colspan="2">Detalle de Cotizacion</th>
-                </tr>
-                <tr>
-                  <td>Producto :</td>
-                    <td>
-                      <select name="producto2">
-                        <option  value="">...</option>
-                        <option  value="ventana L20">ventana L20</option>
-                        <option  value="ventana L25">ventana L25</option>
-                        <option  value="ventana L30">ventana L30</option>
-                        <option  value="puerta aluminio L30">puerta aluminio L30</option>
-                        <option  value="puerta aluminio L35">puerta aluminio L35</option>
-                        <option  value="puerta corrediza de vidrio  templado">puerta corrediza de vidrio  templado</option>
-                        <option  value="puerta batiente de vidrio  templado">puerta batiente de vidrio  templado</option>
-                      </select>
-                    </td>
-                	</tr>
-	                <tr>
-	                  <td>Alto :</td>
-	                  <td><input type="text" size="20" name="alto2" maxlength="15" ></td>
-	                </tr>
-	                <tr>
-	                  <td>Ancho :</td>
-	                  <td><input type="text" size="20" name="ancho2" maxlength="15" ></td>
-	                </tr>
-	                <tr>
-	                  <td>Precio :</td>
-	                  <td><input type="text" size="20" name="precio2" maxlength="15" ></td>
-	                </tr>
-              	</table>
-              </section>
-              <table width=100%>
-								<tr>
-									<th colspan="2">
-										<div align="center">
-											<input type="button" value="guardar" class="boton" onclick="validar()">
-											<input type="reset" value="borrar" class="boton">
-										</div>
-									</th>
-								</tr>
-								<tr>
-									<td colspan="2"><div class="datosObligatorios" align="center"> *Todos los datos son obligatorios* </div></td>
-								</tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-        <br><br><br><br><br>
-      </form>
-  </section>
-</body>
+    </head>
+    <body>
+        <!doctype html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Menu Sistema Aluformas</title>
+
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+            <body>
+                <div class="contenedor">
+                	<h1>Menu sistema Aluformas</h1>
+                    <ul id="menu">
+                        <li>
+                            <figure class="logo">
+                                <img src="css/img/bitmap1.svg" alt="logo">
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Herramientas</a>
+                        	<ul class="children1">
+                            	<li><a href="#">Personas</a></li>
+                                <li><a href="#">Usuarios</a></li>
+                                <li><a href="#">Roles</a></li>
+                                <li><a href="#">Usuarios-Roles</a></li>
+                                <li><a href="#">Grupos</a></li>
+                                <li><a href="#">Opciones</a></li>
+                                <li><a href="#">Accesos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Parametros</a>
+                        	<ul class="children2">
+                            	<li><a href="formulario10.html">Colores</a></li>
+                                <li><a href="formulario11.html">Tipos de Perfil</a></li>
+                                <li><a href="formulario12.html">Lineas de Perfil</a></li>
+                                <li><a href="formulario13.html">Tipos de Vidrios</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Aluformas</a>
+                        	<ul class="children3">
+                            	<li><a href="formulario1.html">Datos de Vidriería</a></li>
+                                <li><a href="formulario2.html">Propietarios</a></li>
+                                <li><a href="formulario3.html">Empleados</a></li>
+                                <li><a href="formulario4.html">Proveedores</a></li>
+                                <li><a href="formulario5.html">Vidrios</a></li>
+                                <li><a href="formulario6.html">Perfiles</a></li>
+                                <li><a href="formulario7.html">Productos</a></li>
+                                <li><a href="formulario8.html">Clientes</a></li>
+                                <li><a href="formulario9.html">Cotizaciones</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Reportes</a>
+                        	<ul class="children4">
+                            	<li><a href="#">RPT Emleados-Cotizaciones</a></li>
+                                <li><a href="#">RPT Empleados-Sueldos</a></li>
+                                <li><a href="#">RPT cotizaciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </body>
+        </html>
+        <br><br><br><br><br><br>
+
+        <div id="formularios" align="center">
+            <form name="form">
+                <table border="3" width=490>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Productos</legend>
+                                <table border="0" width=100%>
+                                    <tr>
+                    					<td>Nombres :</td>
+                                        <td><input type="text" size="30" name="nombres" maxlength="35" onkeyup="this.value=this.value.toUpperCase()" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Precio M2 (bs) :</td>
+                                        <td><input type="text" size="30" name="precioM2" maxlength="15" ></td>
+                                    </tr>
+    								<tr>
+    									<th colspan="2">
+    										<div align="center">
+    											<input type="button" value="guardar" class="boton" onclick="validar()">
+    											<input type="reset" value="borrar" class="boton">
+    										</div>
+    									</th>
+    								</tr>
+    								<tr>
+    									<td colspan="2"><div class="datosObligatorios" align="center"> *Todos los datos son obligatorios* </div></td>
+    								</tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
 </html>

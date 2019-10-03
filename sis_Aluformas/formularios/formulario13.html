@@ -1,87 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Menu Formularios</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-  <script type="text/javascript" src="js/expreciones_regulares.js"></script>
-  <script type="text/javascript" src="js/validacion10.js"></script>
-</head>
-<body>
-  <br><br>
-  <header>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Tipos de Vidrios</title>
+        <link rel="stylesheet" href="css/style.css">
 
-  </header>
- 	<nav id="principal">Menú principal
-    <div id="menu">
-  	  <ul>
-        <li class="nivel1">
-          <a href="formulario1.html" class="nivel1">Datos empresa</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario2.html" class="nivel1">perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario3.html" class="nivel1">vidrios</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario4.html" class="nivel1">proveedores</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario5.html" class="nivel1">empleados</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario6.html" class="nivel1">propietarios</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario7.html" class="nivel1">cotizaciones</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario8.html" class="nivel1">clientes</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario10.html" class="nivel1">productos</a>
-        </li>
-				<li class="nivel1">
-          <a href="formulario11.html" class="nivel1">Tipos de perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario12.html" class="nivel1">colores</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario13.html" class="nivel1">Lineas de Perfiles</a>
-        </li>
-        <li class="nivel1">
-          <a href="formulario14.html" class="nivel1">Tipos de Vidrios</a>
-        </li>
-      </div>
-  	</nav>
-    <br><br>
-    <section id="columna">
-    <br><br><br><br><br>
-      <header id="subtitulo2">Lineas de Perfiles</header>
-      <form name="form">
-        <table border="1" width=260>
-          <tr>
-            <td>
-              <table border="0">
-                <tr>
-                  <td>linea :</td>
-                  <td><input type="text" size="20" name="nombres" maxlength="2" ></td>
-                </tr>
-								<tr>
-									<th colspan="2">
-										<div align="center">
-											<input type="button" value="guardar" class="boton" onclick="validar()">
-											<input type="reset" value="borrar" class="boton">
-										</div>
-									</th>
-								</tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </form>
-  </section>
-</body>
+    </head>
+    <body>
+        <!doctype html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Menu Sistema Aluformas</title>
+
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+            <body>
+                <div class="contenedor">
+                	<h1>Menu sistema Aluformas</h1>
+                    <ul id="menu">
+                        <li>
+                            <figure class="logo">
+                                <img src="css/img/bitmap1.svg" alt="logo">
+                            </figure>
+                        </li>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Herramientas</a>
+                        	<ul class="children1">
+                            	<li><a href="#">Personas</a></li>
+                                <li><a href="#">Usuarios</a></li>
+                                <li><a href="#">Roles</a></li>
+                                <li><a href="#">Usuarios-Roles</a></li>
+                                <li><a href="#">Grupos</a></li>
+                                <li><a href="#">Opciones</a></li>
+                                <li><a href="#">Accesos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Parametros</a>
+                        	<ul class="children2">
+                            	<li><a href="formulario10.html">Colores</a></li>
+                                <li><a href="formulario11.html">Tipos de Perfil</a></li>
+                                <li><a href="formulario12.html">Lineas de Perfil</a></li>
+                                <li><a href="formulario13.html">Tipos de Vidrios</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Aluformas</a>
+                        	<ul class="children3">
+                            	<li><a href="formulario1.html">Datos de Vidriería</a></li>
+                                <li><a href="formulario2.html">Propietarios</a></li>
+                                <li><a href="formulario3.html">Empleados</a></li>
+                                <li><a href="formulario4.html">Proveedores</a></li>
+                                <li><a href="formulario5.html">Vidrios</a></li>
+                                <li><a href="formulario6.html">Perfiles</a></li>
+                                <li><a href="formulario7.html">Productos</a></li>
+                                <li><a href="formulario8.html">Clientes</a></li>
+                                <li><a href="formulario9.html">Cotizaciones</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Reportes</a>
+                        	<ul class="children4">
+                            	<li><a href="#">RPT Emleados-Cotizaciones</a></li>
+                                <li><a href="#">RPT Empleados-Sueldos</a></li>
+                                <li><a href="#">RPT cotizaciones</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </body>
+        </html>
+        <br><br><br><br><br><br>
+
+        <div id="formularios" align="center">
+            <form name="form">
+                <table border="3" width=410>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <legend>Tipos de Vidrio</legend>
+                                <table border="0" width=100%>
+                                    <tr>
+                                        <td>tipo de vidrio :</td>
+                                        <td><input type="text" size="20" name="nombres" maxlength="35" ></td>
+                                    </tr>
+    								<tr>
+    									<th colspan="2">
+    										<div align="center">
+    											<input type="button" value="guardar" class="boton" onclick="validar()">
+    											<input type="reset" value="borrar" class="boton">
+    										</div>
+    									</th>
+    								</tr>
+                                </table>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
 </html>
