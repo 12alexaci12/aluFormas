@@ -16,18 +16,18 @@ function validar(){
 		return;
 	}
 
-	if (!v22.test(alto) || alto == "") {
-		alert("la medida es incorrecta o el campo esta vacio");
-		document.form.alto.focus();
-		return;
-	}
-
 	if (!v22.test(ancho) || ancho == "") {
 		alert("la medida es incorrecta o el campo esta vacio");
 		document.form.ancho.focus();
 		return;
 	}
 
-	alert("Datos correctos");
-	
+	if (!v22.test(alto) || alto == "") {
+		alert("la medida es incorrecta o el campo esta vacio");
+		document.form.alto.focus();
+		return;
+	}
+
+	document.form.submit();
+
 }

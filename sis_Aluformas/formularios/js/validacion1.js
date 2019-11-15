@@ -24,5 +24,5 @@ function validar(){
 		return;
 	}
 
-	alert("datos correctos");
+	document.form.submit();
 }

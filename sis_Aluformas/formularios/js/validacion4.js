@@ -20,8 +20,9 @@ function validar() {
 
     if (telefono == "") {
         alert("el campo de telefono esta vacio");
+        document.form.telefono.focus();
         return;
     }
 
-    alert("datos correctos");
+    document.form.submit();
 }
