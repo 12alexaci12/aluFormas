@@ -2,9 +2,9 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>proveedores</title>
+        <title>Propietarios</title>
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/validacion1.js"></script>
+        <script type="text/javascript" src="js/validacion4.js"></script>
         <script type="text/javascript" src="js/expreciones_regulares.js"></script>
     </head>
     <body>
@@ -43,24 +43,24 @@
                         <li>
                             <a href="#">Parametros</a>
                         	<ul class="children2">
-                            	<li><a href="formulario10.html">Colores</a></li>
-                                <li><a href="formulario11.html">Tipos de Perfil</a></li>
-                                <li><a href="formulario12.html">Lineas de Perfil</a></li>
-                                <li><a href="formulario13.html">Tipos de Vidrios</a></li>
+                            	<li><a href="colores.html">Colores</a></li>
+                                <li><a href="tipoPerfil.html">Tipos de Perfil</a></li>
+                                <li><a href="lineaPerfil.html">Lineas de Perfil</a></li>
+                                <li><a href="tipoVidrio.html">Tipos de Vidrios</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Aluformas</a>
                         	<ul class="children3">
-                            	<li><a href="formulario1.html">Datos de Vidriería</a></li>
-                                <li><a href="formulario2.html">Propietarios</a></li>
-                                <li><a href="formulario3.html">Empleados</a></li>
-                                <li><a href="formulario4.html">Proveedores</a></li>
-                                <li><a href="formulario5.html">Vidrios</a></li>
-                                <li><a href="formulario6.html">Perfiles</a></li>
-                                <li><a href="formulario7.html">Productos</a></li>
-                                <li><a href="formulario8.html">Clientes</a></li>
-                                <li><a href="formulario9.html">Cotizaciones</a></li>
+                            	<li><a href="vidrieria.html">Datos de Vidriería</a></li>
+                                <li><a href="propietarios.html">Propietarios</a></li>
+                                <li><a href="empleados.html">Empleados</a></li>
+                                <li><a href="proveedores.html">Proveedores</a></li>
+                                <li><a href="vidrios.html">Vidrios</a></li>
+                                <li><a href="perfiles.html">Perfiles</a></li>
+                                <li><a href="productos.html">Productos</a></li>
+                                <li><a href="clientes.html">Clientes</a></li>
+                                <li><a href="cotizaciones.html">Cotizaciones</a></li>
                             </ul>
                         </li>
                         <li>
@@ -78,37 +78,37 @@
         <br><br><br><br><br><br>
 
         <div id="formularios" align="center">
-            <form name="form" action="formulario4.php" method="post">
+            <form name="form" action="propietarios.php" method="post">
                 <table border="3" width=400>
                     <tr>
                         <td>
                             <fieldset>
-                                <legend>Datos de Proveedor</legend>
+                                <legend>Datos de Propietarios</legend>
                                 <table border="0" width=100%>
                                     <tr>
                                       <td>Nombre :</td>
-                                      <td><input type="text" size="20" name="nombres" maxlength="25" onkeyup="this.value=this.value.toUpperCase()" ></td>
+                                      <td><input type="text" size="20" name="nombres" maxlength="25" onkeyup="this.value=this.value.toUpperCase()"></td>
                                     </tr>
                                     <tr>
-                                      <td>Direccion :</td>
-                                      <td><input type="text" size="20" name="direccion" maxlength="30" ></td>
+                                      <td>CI :</td>
+                                      <td><input type="text" size="20" name="ci" maxlength="15" ></td>
                                     </tr>
                                     <tr>
                                       <td>Telefono :</td>
                                       <td><input type="text" size="20" name="telefono" maxlength="15" ></td>
                                     </tr>
-    								<tr>
-    									<th colspan="2">
-    										<div align="center">
-    											<input type="button" value="guardar" class="boton" onclick="validar()">
-    											<input type="reset" value="borrar" class="boton">
-    										</div>
-    									</th>
-    								</tr>
-    								<tr>
-    									<td colspan="2"><div class="datosObligatorios" align="center"> *Todos los datos son obligatorios* </div></td>
-    								</tr>
-                            	</table>
+                                    <tr>
+                                        <th colspan="2">
+                                            <div align="center">
+                                                <input type="button" value="guardar" class="boton" onclick="validar()">
+                                                <input type="reset" value="borrar" class="boton">
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><div class="datosObligatorios" align="center"> *Todos los datos son obligatorios* </div></td>
+                                    </tr>
+                                </table>
                             </fieldset>
                         </td>
                     </tr>

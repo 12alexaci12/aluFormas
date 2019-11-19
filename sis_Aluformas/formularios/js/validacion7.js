@@ -109,6 +109,6 @@ function validar(){
 		return;
 	}
 
-	alert("Datos correctos");
+	document.form.submit();
 
 }
