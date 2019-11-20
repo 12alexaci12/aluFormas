@@ -24,7 +24,7 @@ function validar(){
 		return;
 	}
 
-	if (fecha == "") {
+	if (!vFecha.test(fecha) || fecha == "") {
 		alert("ingrese fecha");
 		return;
 	}

@@ -1,6 +1,6 @@
 <?php
-  $nombre = $_POST["nombres"];
+  $linea = $_POST["linea"];
 
   echo "Los datos de Linea de perfil son :<br>";
-  echo "nombre : ".$nombre."<br>";
+  echo "linea : ".$linea."<br>";
 ?>
