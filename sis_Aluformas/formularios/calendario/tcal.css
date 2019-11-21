@@ -1,6 +1,6 @@
 /*
 	Stylesheet for Tigra Calendar v5.0
-	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed) 
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed)
 	URL: http://www.softcomplex.com/products/tigra_calendar/
 
 	- all image paths are relative to path of stylesheet
@@ -8,7 +8,11 @@
 
 */
 
-/* input box in default state */ 
+/* input box in default state */
+.fondocal{
+	background-color: white;
+	color : white;
+}
 .tcalInput {
 	background: url('img/cal.gif') 100% 50% no-repeat;
 	padding-right: 20px;
@@ -93,8 +97,8 @@
 	width: 14%;
 	font-size: 11px;
 	cursor: pointer;
-}		
+}
 #tcalGrid td.tcalOtherMonth { color: silver; }
 #tcalGrid td.tcalWeekend { background-color: #ACD6F5; }
 #tcalGrid td.tcalToday { border: 1px solid red; }
-#tcalGrid td.tcalSelected { background-color: #FFB3BE; }		
+#tcalGrid td.tcalSelected { background-color: #FFB3BE; }

@@ -8,6 +8,5 @@ function validar() {
         document.form.nombres.focus();
         return;
     }
-
     document.form.submit();
 }
